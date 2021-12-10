@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Page Title -->
+  <title>Random Excuses Gerenator</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1>I...DON'T WANNA WORK</h1>
+      <small>There may be no excuse for laziness, but I'm still looking...</small>
+    </div>
+  </header>
+
+  <section>
+    <div class="container-fluid">
+      <div class="excuses">
+        <p>Hit Generate</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="buttons-fluid">
+        <button onclick="getExcuse()">Select Tag</button>
+        <div class="tags">
+          <select id="tags" onchange="getOption()"></select>
+        </div>
+        <button onclick="getRandom()">Generate</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- link javascript file -->
+  <script src="script.js"></script>
+</body>
+
+</html>

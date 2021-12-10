@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+@import url('https://fonts.google.com/specimen/Architects+Daughter?preview.text=I%20...%20DON%27T%20WANNA%20WORK&preview.text_type=custom#standard-styles');
+html,
+body {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: url(img/bg-resize-2.jpg);
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 300 bold;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 40px;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Set Color Variables */
+:root {
+  --white: #fff;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --grey: #6c757d;
+  --light-grey: #ced4da;
+}
+/* Highlight on Select */
+::selection {
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+.container {
+  padding-right: 25%;
+  padding-left: 25%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  color: var(--light);
+  background-color: var(--dark);
+  padding-left: 10%;
+  padding-left: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 5px;
+}
+
+.buttons {
+  margin: 20px;
+}
+
+.buttons-fluid {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons > * {
+  margin: 20px;
+  text-decoration: none;
+}
+
+/* Form */
+div.form-group {
+  padding: 10px;
+  display: inline-block;
+}
+
+label {
+  display: inline-block;
+  margin: 5px;
+}
+
+select {
+  text-align: center;
+  border: 1px solid var(--light-grey);
+  display: block;
+  border-radius: 20px;
+  padding: 6px 12px;
+  height: 40px;
+  transition: all 0.5s ease-in-out;
+}
+
+select > option {
+  color: var(--white);
+  background-color: var(--dark);
+}
+
+select:hover {
+  color: var(--dark);
+  background-color: var(--white);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+button {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 6px 12px;
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  transition: all 0.45s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+#tags {
+  visibility: hidden;
+}
+
+.excuse,
+.excuses {
+  justify-content: center;
+  align-items: center;
+  color: var(--light);
+  background-color: var(--dark);
+  border-radius: 5px;
+  margin: 05%;
+  min-height: 40vh;
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .container {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
